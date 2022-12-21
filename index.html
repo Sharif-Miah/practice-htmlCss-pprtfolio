@@ -4,47 +4,349 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/uikit.min.css">
 </head>
 <body>
-
-    <header class="header">
+    
+    <header>
         <div class="container">
-            <nav class="flex">
-                <div class="left flex">
-                    <div class="header-img">
-                        <img src="./images/logo-2.svg" alt="">
+            <nav class="flex items-center justify-between">
+                <div class="left flex items-center justify-between">
+                    <div class="branding">
+                        <img src="images/logo-2.svg" alt="">
                     </div>
-                    <div class="header-menu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Psges</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
+                    <div class="menu">
+                        <a href="#Home">Home</a>
+                        <a href="#About">About</a>
+                        <a href="#Services">Services</a>
+                        <a href="#Pages">Pages</a>
+                        <a href="#Blog">Blog</a>
                     </div>
                 </div>
                 <div class="right">
-                    <button class="btn">Contact</button>
+                    <button class="btn btn-primary">Contact</button>
                 </div>
             </nav>
-            <div class="hero flex">
-                <div class="hero-inmg">
+            <div class="hero flex items-center">
+                <div class="left flex-1 flex justify-center">
                     <img src="./images/man.png" alt="">
                 </div>
-                <div class="hero-contant">
+                <div class="right flex-1">
                     <h6>Farhan Sharif</h6>
                     <h1>I'm a creative <span>Designer</span></h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatum neque fugit, distinctio consequuntur dolor sit veniam vero harum illum praesentium ipsam velit possimus vel ipsa repellat, fuga eum alias!</p>
-                    <div class="another-btn">
-                        <button class="downlod-btn">DOWNLOAD CV</button>
+                    <div>
+                        <button class="btn btn-secondary">DOWNLOAD CV</button>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+    <section class="about">
+        <div class="container flex items-center">
+            <div class="flex-1">
+                <img class="about-me-img" src="./images/man-2.png" alt="">
+            </div>
+            <div class="flex-1 another">
+                <h1>About <span>Me</span></h1>
+                <h3>Hello! I'm Farhan Sharif</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, distinctio minima doloribus fugiat ratione earum expedita quam corporis sed repellat. Debitis ipsa omnis eius error tempora fugit consequuntur numquam qui cupiditate vel, ea repellendus consectetur, eum, fugiat quidem repellat porro officiis necessitatibus natus iure aut. Sequi similique obcaecati explicabo cupiditate, quos earum officiis asperiores, iure veritatis hic unde eveniet neque maiores ad tempora placeat suscipit vitae rerum animi assumenda blanditiis!  
+                <br>
+                <br>
+                
+                Doloremque expedita explicabo, quas dolore ipsam numquam ipsum cumque et distinctio nam corrupti. Autem odit fugiat error harum reprehenderit.</p>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services">
+        <div class="container">
+            <h1 class="section-heading"><span>Our</span> Services</h1>
+            <p>We procide high standar clean website for your business solution</p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="brush-img">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h2>Grapic Design</h2>
+                    <p>There are many variations of passages of but the majority have suffered alteration in some form</p>
+                </div>
+                <div class="card">
+                    <div class="brush-img">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h2>Web Develpoment</h2>
+                    <p>There are many variations of passages of but the majority have suffered alteration in some form</p>
+                </div>
+                <div class="card">
+                    <div class="brush-img">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h2>Media Marketing</h2>
+                    <p>There are many variations of passages of but the majority have suffered alteration in some form</p>
+                </div>
+                <div class="card">
+                    <div class="brush-img">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h2>Web Design</h2>
+                    <p>There are many variations of passages of but the majority have suffered alteration in some form</p>
+                </div>
+                <div class="card">
+                    <div class="brush-img">
+                        <i class="fas fa-photo-video"></i>
+                    </div>
+                    <h2>Motion Grophic</h2>
+                    <p>There are many variations of passages of but the majority have suffered alteration in some form</p>
+                </div>
+                <div class="card">
+                    <div class="brush-img">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                    <h2>Apps</h2>
+                    <p>There are many variations of passages of but the majority have suffered alteration in some form</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+    <section class="freelancer">
+            <h1>I Am Available For Freelancer.</h1>
+        <p>We provide high stander clean website for your bussness solution.</p>
+        <button class="btn btn-primary"> Download CV</button>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <h1 class="section-heading"><span>Our </span>Client</h1>
+            <p>We provide high standar clean website for your bussness solution</p>
+            <div class="slider">
+                <div class="slide">
+                    <img src="./images/lady.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit laborum possimus quod voluptas cupiditate, animi velit, repellendus tenetur neque, tempora atque provident ab et. Id quas magni voluptate doloremque?</p>
+                    <span>-John Doel, company ABC</span>
+                </div>
+                <div class="slide">
+                    <img src="./images/istockphoto-1045886560-612x612.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit laborum possimus quod voluptas cupiditate, animi velit, repellendus tenetur neque, tempora atque provident ab et. Id quas magni voluptate doloremque?</p>
+                    <span>-David Bacham, company ABC</span>
+                </div>
+                <div class="slide">
+                    <img src="./images/depositphotos_23439510-stock-photo-indian-manager-in-her-office.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit laborum possimus quod voluptas cupiditate, animi velit, repellendus tenetur neque, tempora atque provident ab et. Id quas magni voluptate doloremque?</p>
+                    <span>-Anna Adams, company ABC</span>
+                </div>
+                <div class="slide">
+                    <img src="./images/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.webp" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit laborum possimus quod voluptas cupiditate, animi velit, repellendus tenetur neque, tempora atque provident ab et. Id quas magni voluptate doloremque?</p>
+                    <span>-Abraham, company ABC</span>
+                </div>
+            </div>
+            <div class="slider-dots">
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="work">
+        <div class="container">
+            <h1 class="section-heading"><span>Our </span>Work</h1>
+            <p>We provide high stander clean website for your business solution</p>
+
+
+
+            <div class="card-wrapper" uk-lightbox="animation: slide">
+                <div class="card" >
+                    <div class="overlay">
+                        <span>Category</span>
+                        <a href="#">Web Development</a>
+                    </div>
+                   <a href="./images/ph-1.png" data-caption="Caption 1">
+                    <img src="./images/ph-1.png" alt="">
+                   </a>
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <span>Category</span>
+                        <a href="#">Web Development</a>
+                    </div>
+                    <img src="./images/ph-2.png" alt="">
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <span>Category</span>
+                        <a href="#">Web Development</a>
+                    </div>
+                    <img src="./images/ph-3.png" alt="">
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <span>Category</span>
+                        <a href="#">Web Development</a>
+                    </div>
+                   <img src="./images/photo-1499951360447-b19be8fe80f5.png" alt="">
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <span>Category</span>
+                        <a href="#">Web Development</a>
+                    </div>
+                    <img src="./images/photo-1519389950473-47ba0277781c.jpg" alt="">
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <span>Category</span>
+                        <a href="#">Web Development</a>
+                    </div>
+                   <img src="./images/outsource-web-design-computer-720x480.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="container">
+            <h1 class="section-heading"><span>Our</span> Blog</h1>
+            <p>We provide high stander clean website for your business solution</p>
+
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="./images/article-ph-1.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <a href="#">
+                            <h1>Occusamus et iusto odio</h1>
+                        </a>
+                        <span>June 10, 2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, consequatur voluptate laborum fuga aspernatur impedit, consequuntur aut reprehenderit rem deserunt velit sapiente pariatur facilis voluptatem maxime eius minima beatae exercitationem dicta quod? Esse, labore iusto?</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="./images/article-ph-2.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <a href="#">
+                            <h1>Occusamus et iusto odio</h1>
+                        </a>
+                        <span>June 10, 2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, consequatur voluptate laborum fuga aspernatur impedit, consequuntur aut reprehenderit rem deserunt velit sapiente pariatur facilis voluptatem maxime eius minima beatae exercitationem dicta quod? Esse, labore iusto?</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="./images/article-ph-3.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <a href="#">
+                            <h1>Occusamus et iusto odio</h1>
+                        </a>
+                        <span>June 10, 2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, consequatur voluptate laborum fuga aspernatur impedit, consequuntur aut reprehenderit rem deserunt velit sapiente pariatur facilis voluptatem maxime eius minima beatae exercitationem dicta quod? Esse, labore iusto?</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact">
+        <div class="containet">
+            <h1 class="section-heading">Contact <span>Us</span> </h1>
+            <p>We provide high stander clean website for your business solution</p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h2>Call us on</h2>
+                    <h6>+985 123 7856</h6>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="far fa-envelope"></i>
+                    </div>
+                    <h2>Email Us At</h2>
+                    <h6>support@companyname.com</h6>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="far fa-map"></i>
+                    </div>
+                    <h2>Visit Office</h2>
+                    <h6>99 s.t narsingdi,Dhaka Bangladesh</h6>
+                </div>
+            </div>
+
+            <form action="" class="form-class">
+                <div class="input-wrap">
+                    <input type="text" placeholder="Your Name *">
+                    <input type="Email" placeholder="Your Email *">
+                </div>
+                <div class="input-wrap2">
+                    <input type="text" placeholder="your Subject...">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Yuor Massage"></textarea>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn btn-primary">Send Massage</button>
+                </div>
+            </form>
+        </div>
+    </section> 
+
+
+    <footer>
+        <div class="footer-img">
+             <img src="./images/logo-2.svg" alt="">
+        </div>
+       
+
+        <div class="footer-socials">
+                <a  href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-pinterest-p"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="copyright">
+            Copyright 2021 @ Name PSD Template, All Right Reserved.
+        </div>
+        <div class="to-top">
+            <a href="#" uk-totop uk-scroll></a>
+        </div>
+    </footer>
+
+
+        <script src=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/uikit.min.js"></script>
+        <script src="./js/uikit-icons.min.js"></script>
+        <script src="./js/app.js"></script>
 
 </body>
 </html>

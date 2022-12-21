@@ -1,0 +1,16 @@
+@media screen and (max-width: 1200px) {
+    .form-class {
+        width: 1100px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .menu {
+        margin-left: 112px;
+    }
+    .form-class {
+        width: 950px;
+        margin: auto;
+    }
+}
